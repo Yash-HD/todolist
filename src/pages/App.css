@@ -1,0 +1,104 @@
+/* App Container */
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block !important;
+  justify-content: unset !important;
+  align-items: unset !important;
+}
+
+/* Add Task Section */
+.addTask {
+  height: 30vh;
+  background-color: rgb(64, 160, 255);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.addTask input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: black solid;
+  border-radius: 5px;
+  background-color: #787878;
+  color: white;
+}
+
+.addTask button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addTask button:hover {
+  background-color: #353535;
+}
+
+/* Task List Layout */
+.list {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Individual Task Box */
+.task {
+  width: 500px;
+  min-height: 50px;
+  background-color: #3c3c3c;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Title */
+.task h1 {
+  font-size: 18px;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white; /* override global h1 styles */
+}
+
+/* Buttons inside task */
+.task button {
+  padding: 5px 10px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background-color: darkred;
+}

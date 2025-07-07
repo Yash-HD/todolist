@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fullscreen dark layout */
+body {
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    color: #ffa100;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"] {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 250px;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ffa100;
+}
+
+/* Buttons */
+button {
+    background-color: #ffa100;
+    color: #0d0d0d;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #e08f00;
+}
+
+/* Horizontal rule */
+hr {
+    margin: 30px auto;
+    width: 80%;
+    border: none;
+    border-top: 1px solid #333;
+}
+
+/* Error text */
+#loginError {
+    color: #ff5c5c;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 480px) {
+
+    input[type="email"],
+    input[type="password"],
+    button {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* Centered login container */
+.login-box {
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 161, 0, 0.1);
+    max-width: 320px;
+    width: 100%;
+    margin:auto;
+    margin-top: 5%;
+}
